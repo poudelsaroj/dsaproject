@@ -1,7 +1,7 @@
 /* Global CSS */
 .App {
   text-align: center;
-  background-color: var(--bg-shade);
+  background-color: rgb(106, 177, 231);
   color: var(--darkblue);
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: "Roboto", sans-serif;
@@ -14,6 +14,22 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  background-image: image("./assets/background.webp");
+
+}
+.content{
+  display: flex;
+  background: linear-gradient(to right, rgb(205, 235, 242) 0%, rgb(119, 181, 228) 100%);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-image: image("./assets/background.webp");
+  border-radius: 8px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: var(--bg-shade);
+  z-index: 999
 
 }
 /* Global CSS */
@@ -50,7 +66,7 @@ p {
   padding: 14px 32px;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 24px;
   cursor: pointer;
   text-align: center;
@@ -68,8 +84,9 @@ p {
 }
 .btn-outline-primary {
   color: var(--primary);
-  background-color: var(--white);
+  background-color: rgb(195, 226, 241);
   border: 1px solid var(--primary);
+  box-shadow: 1px 5px 5px rgb(94, 177, 244);
 }
 .btn-outline-primary:hover {
   color: var(--white);
@@ -174,7 +191,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   padding: 15px 85.333px;
-  background: var(--white);
+  background: rgb(176, 218, 244);
   box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;

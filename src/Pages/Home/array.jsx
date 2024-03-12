@@ -45,17 +45,20 @@ const BootstrapInput = withStyles((theme) => ({
 const buttonStyle = {
   backgroundColor: "white",
     border: "1px solid rgb(255, 255, 255)",
-    borderRadius: 2,
+    borderRadius: 14,
     color: "#ff7366",
     textAlign: 'center',
     textDecoration: 'none',
+    transition: 'box-shadow .2s',
     fontSize : 'inherit',
     fontWeight : 800,
     padding : "5px 8px 5px 8px",
+    boxShadow: '10 10 5px rgba(0, 0, 0, 0.1)',
     ':hover': {
       cursor : 'pointer',
       backgroundColor: "#ffff9b",
-      color: "#fd0808"
+      color: "#fd0808",
+      boxShadow: '10 10 5px rgba(0, 0, 0, 0.3)',
     }
 };
 
@@ -138,7 +141,7 @@ export default function DataTabelVariable() {
       }
     //   console.log(children);
       table.push(
-        <TableHead style={{backgroundColor: "#ff7366"}}>
+        <TableHead style={{backgroundColor: "#6AB1E7"}}>
         <TableRow key={i}>
           <div style={{paddingTop:20, paddingLeft: 5, color: "#000000"}}>Person {i+1} has to pay</div>
           <TableCell>{children}</TableCell>
@@ -199,8 +202,8 @@ export default function DataTabelVariable() {
       <div>
 
         
-        <div className={"rowColumnsNumber"} style={{ marginTop: 20, display: "flex"}}>
-        <h4 style={{paddingRight: 20}}>Enter total number of persons involved in cash flow: </h4>
+        <div className={"rowColumnsNumber"} style={{ marginTop: 20, display: "flex",justifyContent:'center',textAlign:'center',}}>
+        <h4 style={{paddingRight: 20,}}>Enter total number of persons involved in cash flow: </h4>
           <TextField
             id="Row-number"
             label="Persons"
